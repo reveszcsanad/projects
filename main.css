@@ -1,0 +1,166 @@
+body {
+    font-family: 'Barlow', sans-serif;
+    background-image: url("images/projects/main_background.jpg");
+    background-size: contain;
+    background-repeat: repeat;
+}
+
+header {
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 10px;
+    background-image: url('/images/projects/bg_header_n_footer.jpg');
+    background-size:130%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("images/background_leaves.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.light-text {
+    color: white;
+}
+
+.text-on-pics {
+    color: white;
+}
+
+footer {
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 10px;
+    /*background: #003404;*/
+    background-image: url('/images/projects/bg_header_n_footer.jpg');
+    background-size:130%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.content-wrapper {
+    /*max-width: 450px;*/
+    /*flex-direction: column;*/
+
+    max-width: 900px; /* Increased max-width for accommodating two articles side by side */
+    display: flex;
+    flex-direction: row; /* Updated to display articles in a row */
+    justify-content: space-between; /* Added to create space between articles */
+}
+
+.content-box {
+    /*width: 100%;*/
+    /*!*box-sizing: border-box;*!*/
+    /*min-height: 450px;*/
+    /*margin: 0.5rem;*/
+    /*border: 1px solid black;*/
+    /*background: #C97D60;*/
+
+    width: 50%; /* Adjusted width to leave space between articles */
+    min-height: 450px;
+    margin: 0.5rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    /*background: #dfb08a;*/
+    background-image: url('/images/projects/bg_sections.jpg');
+    background-size:220%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.content-box p {
+    text-align: center;
+    padding: 10px;
+}
+
+.img-holder {
+    position: relative;
+    padding: 10px;
+    max-height: 220px;
+}
+
+.img-holder img {
+    width: 100%;
+    height: auto;
+    max-height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.img-holder h3 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 1.6vw;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+
+    /* Add a semi-transparent black rectangle */
+    color: white;
+    z-index: 1; /* Ensure the text is on top of the rectangle */
+    /*position: relative; !* Make sure the pseudo-element is relative to this container *!*/
+}
+
+.img-holder h3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(30, 90, 0, 0.5); /* Adjust the alpha value for transparency */
+    z-index: -1; /* Place the rectangle behind the text */
+}
+
+.btn-holder {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+
+}
+
+.btn-holder button{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-image: url('/images/projects/button.jpg');
+    background-size:150%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease;
+}
+
+.btn-holder button:hover {
+    color: yellowgreen;
+    transform: scale(1.2);
+}
+
+.btn-holder button a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn-holder button:hover a {
+    color: yellowgreen;
+}
+
+.dark-text {
+    color: #212020;
+}
