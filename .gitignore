@@ -21,7 +21,6 @@
 *.properties
 
 # User-specific files
-.idea/
 *.suo
 *.user
 *.suo
@@ -54,7 +53,6 @@
 *.project
 *.tmproj
 *.tmtags
-.idea/
 
 # SonarQube
 sonar-project.properties
